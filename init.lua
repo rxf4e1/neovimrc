@@ -4,7 +4,7 @@ vim.g.mapleader = [[ ]]
 vim.g.localmapleader = [[ ]]
 
 require("keymap")
-require("o")
-require("cmd")
+require("opts")
+require("aucmds")
 require("global")
 require("lazy-bootstrap")
