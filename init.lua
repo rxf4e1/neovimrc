@@ -6,5 +6,5 @@ vim.g.localmapleader = [[ ]]
 require("keymap")
 require("o")
 require("cmd")
-require("globals")
+require("global")
 require("lazy-bootstrap")
