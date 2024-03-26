@@ -1,20 +1,3 @@
--- return {
---   "folke/which-key.nvim",
---   event = "VimEnter",
---   config = function()
---     require("which-key").setup {}
---     require("which-key").register {
---       ["<leader>b"] = { name = "[B]uffer", _ = "which_key_ignore" },
---       ["<leader>e"] = { name = "[E]xplore", _ = "which_key_ignore" },
---       ["<leader>f"] = { name = "[F]uzzy", _ = "which_key_ignore" },
---       ["<leader>g"] = { name = "[G]it", _ = "which_key_ignore" },
---       ["<leader>l"] = { name = "[L]sp", _ = "which_key_ignore" },
---       ["<leader>o"] = { name = "[O]thers", _ = "which_key_ignore" },
---     }
---   end,
--- }
---
-
 _G.Config.leader_group_clues = {
   { mode = "n", keys = "<leader>b", desc = "[B]uffer" },
   { mode = "n", keys = "<leader>e", desc = "[E]xplore" },

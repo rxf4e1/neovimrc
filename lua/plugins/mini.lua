@@ -5,9 +5,9 @@ return {
     'nvim-tree/nvim-web-devicons',
   },
 
-  -- init = function()
-  --   require('mini.statusline').setup {}
-  -- end,
+  init = function()
+    require('mini.statusline').setup {}
+  end,
 
   config = function()
     require("mini.bracketed").setup {}
@@ -50,12 +50,10 @@ return {
     { "<leader>fl", ":Pick buf_lines scope='current'<CR>", desc = "Buffer Lines (current)" },
     { "<leader>fL", ":Pick buf_lines scope='all'<CR>", desc = "Buffer Lines (All)" },
     { "<leader>fr", ":Pick resume<CR>", desc = "Resume" },
+    { ",", ":Pick buf_lines scope='current'<CR>", desc = "" },
 
     -- git
     { "<leader>gg", ":lua Config.open_lazygit()<CR>", desc = "Git Tab" },
-    -- { "<leader>g", ":", desc = "" },
-    -- { "<leader>g", ":", desc = "" },
-    -- { "<leader>g", ":", desc = "" },
 
     -- others
     { "<leader>oh", ":normal gxiagxila<CR>", desc = "Move arg Left" },
